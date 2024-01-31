@@ -1,3 +1,3 @@
 mod payload;
 
-pub use payload::InitializePayload;
+pub use payload::{EndGamePayload, InitializePayload};
