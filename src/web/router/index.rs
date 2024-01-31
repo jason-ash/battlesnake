@@ -6,6 +6,6 @@ pub fn router() -> Router<State> {
 }
 
 async fn handler() -> Json<InitializePayload> {
-    let payload = InitializePayload::new(Some("author".to_string()), None, None, None, None);
+    let payload = InitializePayload::default().with_author("jason-ash");
     Json(payload)
 }
