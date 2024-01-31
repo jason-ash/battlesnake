@@ -1,4 +1,4 @@
 mod state;
-mod web;
+pub mod web;
 
 pub use state::State;
