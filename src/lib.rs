@@ -1,3 +1,4 @@
+mod model;
 mod state;
 pub mod web;
 
