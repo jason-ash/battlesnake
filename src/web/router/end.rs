@@ -1,4 +1,4 @@
-use crate::{model::EndGamePayload, State};
+use crate::{model::payload::EndGamePayload, State};
 use axum::{http::StatusCode, routing::post, Json, Router};
 
 pub fn router() -> Router<State> {

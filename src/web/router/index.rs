@@ -1,4 +1,4 @@
-use crate::{model::InitializePayload, State};
+use crate::{model::payload::InitializePayload, State};
 use axum::{routing::get, Json, Router};
 
 pub fn router() -> Router<State> {

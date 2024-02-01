@@ -1,5 +1,4 @@
-use super::Battlesnake;
-use crate::model::{board::Board, game::Game};
+use super::{Battlesnake, Board, Game};
 
 #[derive(Debug, serde::Deserialize)]
 pub struct MoveRequestPayload {

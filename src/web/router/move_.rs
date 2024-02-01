@@ -1,7 +1,7 @@
 use axum::{routing::post, Json, Router};
 
 use crate::{
-    model::{MoveRequestPayload, MoveResponsePayload},
+    model::payload::{MoveRequestPayload, MoveResponsePayload},
     State,
 };
 

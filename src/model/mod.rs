@@ -1,5 +1,1 @@
-mod board;
-mod game;
-mod payload;
-
-pub use payload::{EndGamePayload, InitializePayload, MoveRequestPayload, MoveResponsePayload};
+pub mod payload;
