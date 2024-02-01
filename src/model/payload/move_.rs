@@ -8,7 +8,7 @@ pub struct MoveRequestPayload {
     pub you: Battlesnake,
 }
 
-#[derive(Debug, serde::Serialize)]
+#[derive(Debug, Default, serde::Serialize)]
 pub struct MoveResponsePayload {
     #[serde(rename = "move")]
     pub move_: Move,
@@ -21,4 +21,10 @@ pub enum Move {
     Down,
     Left,
     Right,
+}
+
+impl Default for Move {
+    fn default() -> Self {
+        Self::Up
+    }
 }

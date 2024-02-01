@@ -1,11 +1,14 @@
-use axum::{response::IntoResponse, routing::post, Router};
+use axum::{routing::post, Json, Router};
 
-use crate::State;
+use crate::{
+    model::{MoveRequestPayload, MoveResponsePayload},
+    State,
+};
 
 pub fn router() -> Router<State> {
     Router::new().route("/move", post(handler))
 }
 
-async fn handler() -> impl IntoResponse {
-    "move up!"
+async fn handler(Json(payload): Json<MoveRequestPayload>) -> Json<MoveResponsePayload> {
+    MoveResponsePayload::default().into()
 }

@@ -3,4 +3,4 @@ mod board;
 mod game;
 mod payload;
 
-pub use payload::{EndGamePayload, InitializePayload};
+pub use payload::{EndGamePayload, InitializePayload, MoveRequestPayload, MoveResponsePayload};

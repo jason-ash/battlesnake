@@ -6,6 +6,5 @@ pub fn router() -> Router<State> {
 }
 
 async fn handler() -> Json<InitializePayload> {
-    let payload = InitializePayload::default().with_author("jason-ash");
-    Json(payload)
+    InitializePayload::default().with_author("jason-ash").into()
 }
