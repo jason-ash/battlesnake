@@ -1,2 +1,10 @@
+use super::{battlesnake::Position, Battlesnake};
+
 #[derive(Debug, serde::Deserialize)]
-pub struct Board {}
+pub struct Board {
+    pub height: u8,
+    pub width: u8,
+    pub food: Vec<Position>,
+    pub hazards: Vec<Position>,
+    pub snakes: Vec<Battlesnake>,
+}
