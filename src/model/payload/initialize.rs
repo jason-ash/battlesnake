@@ -1,5 +1,6 @@
 #[derive(Debug, serde::Serialize)]
 pub struct InitializePayload {
+    #[serde(rename = "apiversion")]
     api_version: String,
     author: String,
     #[serde(flatten)]
