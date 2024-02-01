@@ -17,7 +17,6 @@ RUN cargo build --release
 FROM alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 COPY --from=builder /usr/src/app/target/release/battlesnake .
-COPY --from=builder /usr/src/app/public /public
 USER appuser
 EXPOSE 8888
 CMD ["./battlesnake"]
