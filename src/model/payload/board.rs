@@ -1,4 +1,4 @@
-use super::{battlesnake::Position, Battlesnake};
+use super::{Battlesnake, Position};
 
 #[derive(Debug, serde::Deserialize)]
 pub struct Board {

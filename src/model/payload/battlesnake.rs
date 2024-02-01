@@ -1,4 +1,4 @@
-use super::Customizations;
+use super::{Customizations, Position};
 use std::collections::VecDeque;
 
 #[derive(Debug, serde::Deserialize)]
@@ -13,10 +13,4 @@ pub struct Battlesnake {
     pub shout: String,
     pub squad: String,
     pub customizations: Customizations,
-}
-
-#[derive(Debug, serde::Deserialize)]
-pub struct Position {
-    pub x: u8,
-    pub y: u8,
 }
