@@ -10,5 +10,7 @@ pub fn router() -> Router<State> {
 }
 
 async fn handler(Json(payload): Json<MoveRequestPayload>) -> Json<MoveResponsePayload> {
-    MoveResponsePayload::default().into()
+    let response = MoveResponsePayload::default();
+    tracing::debug!("{:?}", response);
+    response.into()
 }

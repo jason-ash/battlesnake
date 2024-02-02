@@ -7,7 +7,7 @@ pub struct Battlesnake {
     pub name: String,
     pub health: u8,
     pub body: VecDeque<Position>,
-    pub latency: u32,
+    // pub latency: u32,
     pub head: Position,
     pub length: u8,
     pub shout: String,
