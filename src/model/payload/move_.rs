@@ -1,4 +1,5 @@
 use super::{Battlesnake, Board, Game};
+use crate::model::Move;
 
 #[derive(Debug, serde::Deserialize)]
 pub struct MoveRequestPayload {
@@ -13,19 +14,4 @@ pub struct MoveResponsePayload {
     #[serde(rename = "move")]
     pub move_: Move,
     pub shout: String,
-}
-
-#[derive(Debug, serde::Serialize)]
-#[serde(rename_all = "lowercase")]
-pub enum Move {
-    Up,
-    Down,
-    Left,
-    Right,
-}
-
-impl Default for Move {
-    fn default() -> Self {
-        Self::Up
-    }
 }
