@@ -1,4 +1,5 @@
-use super::{Battlesnake, Position};
+use super::Battlesnake;
+use crate::model::Position;
 
 #[derive(Debug, serde::Deserialize)]
 pub struct Board {

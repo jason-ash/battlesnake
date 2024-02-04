@@ -1,4 +1,5 @@
-use super::{Customizations, Position};
+use super::Customizations;
+use crate::model::Position;
 use std::collections::VecDeque;
 
 #[derive(Debug, serde::Deserialize)]
