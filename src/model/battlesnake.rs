@@ -1,12 +1,12 @@
-use super::Move;
+use super::{Cell, Move};
 use std::collections::VecDeque;
 
-pub struct Snake {
-    head: usize,
-    body: VecDeque<usize>,
+pub struct BattleSnake {
+    head: Cell,
+    body: VecDeque<Cell>,
 }
 
-impl Snake {
+impl BattleSnake {
     /// return the direction immediately "backwards" of the snake, which,
     /// if selected, would result in an immediate loss by self-elimination.
     pub fn backwards(&self) -> Move {
